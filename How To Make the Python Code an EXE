@@ -1,0 +1,24 @@
+To make any python file an exe you'll have to:
+pip install pyinstaller
+duplicate your project an rename it your choice e.g "exe"
+open the duplicate project with pycharm and open the terminal
+ensure to change the directories in your code to the new directory where the duplicate file is saved if any
+
+in the terminal type in: pyinstaller.exe --onefile --noconsole --icon="the icon name" main.py
+
+--onefile means it makes the exe one file
+--noconsole means it stops pyinstaller from opening a background console
+--icon means the icon image (ensure its in the same folder as your project)
+main.py means the name of your "code file".py
+finish!
+
+IF YOU WANT TO PACKAGE CUSTOMTKINTER
+pip install pyinstaller
+duplicate your project an rename it your choice e.g "exe"
+open the duplicate project with pycharm and open the terminal
+ensure to change the directories in your code to the new directory where the duplicate file is saved if any
+
+in the terminal type in: pyinstaller --noconfirm --onedir --windowed --add-data "C:\Users\"COMPUTER USERNAME"\AppData\Local\Programs\Python\Python310\Lib\site-packages\customtkinter;customtkinter/" --icon="the icon name.ico" main.py
+
+if you are using the tkcalendar module, add (--hidden-import babel.numbers) to the line of codemain.py means the name of your "code file".py
+finish!
